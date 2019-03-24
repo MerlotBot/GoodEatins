@@ -15,6 +15,7 @@ class RecipesSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     var selectedCategory: String!
     var recipes: [Recipe]!
     let data = DataSet()
+    var recipeToPass: Recipe!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,18 @@ class RecipesSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
         let width = view.bounds.width
         let cellDimension = (width / 2) - 15
         return CGSize(width: cellDimension, height: cellDimension)
+    }
+    
+    // we need to know when we have selected one of our item
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        recipeToPass = recipes[indexPath.item]
+        performSegue(withIdentifier: "toRecipeSelection", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? RecipeDetailVC {
+            detailsVC.selectedRecipe = recipeToPass
+        }
     }
 
 }

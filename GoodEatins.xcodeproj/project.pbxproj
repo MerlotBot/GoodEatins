@@ -18,6 +18,7 @@
 		805DE7282246EEC7000C4934 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DE7272246EEC7000C4934 /* CategoryCell.swift */; };
 		805DE72A224754DB000C4934 /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DE729224754DB000C4934 /* RecipesSelectionVC.swift */; };
 		805DE72C22475C86000C4934 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DE72B22475C86000C4934 /* RecipeCell.swift */; };
+		805DE72E224766DB000C4934 /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DE72D224766DB000C4934 /* RecipeDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		805DE7272246EEC7000C4934 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		805DE729224754DB000C4934 /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
 		805DE72B22475C86000C4934 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		805DE72D224766DB000C4934 /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				805DE6EC2246CAA8000C4934 /* HomeVC.swift */,
 				805DE729224754DB000C4934 /* RecipesSelectionVC.swift */,
+				805DE72D224766DB000C4934 /* RecipeDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805DE72E224766DB000C4934 /* RecipeDetailVC.swift in Sources */,
 				805DE6ED2246CAA8000C4934 /* HomeVC.swift in Sources */,
 				805DE7042246CBD6000C4934 /* DataSet.swift in Sources */,
 				805DE7002246CB49000C4934 /* FoodCategory.swift in Sources */,
